@@ -108,7 +108,7 @@ export default function Quiz() {
             next={nextQuestion}
             prev={prevQuestion}
             submit={submit}
-            progress={percentage}
+            progress={Math.floor(percentage)}
           />
           <MiniPlayer id={id} title={qna[currentQuestion].title} />
           {/* <MiniPlayer id={id} title={videoTitle} /> */}
